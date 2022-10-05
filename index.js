@@ -7,7 +7,6 @@ const dbname = "nucampsite";
 
 MongoClient.connect(url, { useUnifiedTopology: true }, (err, client) => {
   assert.strictEqual(err, null);
-
   console.log("Connected correctly to server");
 
   const db = client.db(dbname);
